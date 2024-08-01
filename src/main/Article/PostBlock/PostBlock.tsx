@@ -6,21 +6,21 @@ import { PostInterface } from "../../../interface/Post";
 
 const PostBlock: React.FC = () => {
     const post1: PostInterface = {
-        posterPhoto: PosterPhoto1, // 待改
+        posterPhotoUrl: PosterPhoto1, // 待改
         posterName: 'pop.dokyun_el',
         content: '哇嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎嘎',
         timePassed: '15m',
-        postImg: PostImg1,
+        postImgUrl: PostImg1,
         likeQty: 100,
     }
 
     return (
         <Post 
-            posterPhoto={ post1.posterPhoto }
+            posterPhotoUrl={ post1.posterPhotoUrl }
             posterName={ post1.posterName }
             content={ post1.content }
             timePassed={ post1.timePassed }
-            postImg={ post1.postImg }
+            postImgUrl={ post1.postImgUrl }
             likeQty={ post1.likeQty }
         />
     )

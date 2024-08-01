@@ -7,30 +7,30 @@ import CommentBtn from "./CommentBtn";
 import ShareBtn from "./ShareBtn";
 
 interface PostProps {
-    posterPhoto: string;
+    posterPhotoUrl: string;
     posterName: string;
     content: string;
     timePassed: string;
-    postImg: string;
+    postImgUrl: string;
     likeQty: number;
 }
 
-const Post: React.FC<PostProps> = ({ posterPhoto, posterName, content, timePassed, postImg, likeQty }) => {
+const Post: React.FC<PostProps> = ({ posterPhotoUrl, posterName, content, timePassed, postImgUrl, likeQty }) => {
     return (
         <div className='bg-gray-100 h-auto w-full rounded-lg p-3 mt-3 flex'>
             <div className='mr-3 flex flex-col'>
                 <a
-                    href='javascript:;'
+                    href='#'
                     className='block h-24 w-24 rounded-lg overflow-hidden'
                 >
                     <img
-                        src={ posterPhoto }
+                        src={ posterPhotoUrl }
                         alt=''
                         className='h-full w-full'
                     />
                 </a>
                 <a
-                    href='javascript:;'
+                    href='#;'
                     className='h-5 w-24 rounded-lg bg-gray-300 text-white mt-3 font-bold text-2xs center hover:underline'
                 >
                     @
@@ -54,7 +54,7 @@ const Post: React.FC<PostProps> = ({ posterPhoto, posterName, content, timePasse
                     </div>
                 </div>
                 <img
-                    src={ postImg }
+                    src={ postImgUrl }
                     alt=''
                     className='w-full mt-3 rounded-lg'
                 />
