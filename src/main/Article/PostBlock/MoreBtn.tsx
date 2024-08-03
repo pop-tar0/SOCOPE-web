@@ -1,6 +1,6 @@
+import React from "react";
 import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
 const MoreBtn: React.FC = () => {
     return (

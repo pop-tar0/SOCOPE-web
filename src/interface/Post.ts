@@ -6,3 +6,7 @@ export interface PostInterface {
     postImgUrl: string, // 貼文圖片
     likeQty: number, // like 數量
 }
+
+export interface PostResponse {
+    data: PostInterface;
+}

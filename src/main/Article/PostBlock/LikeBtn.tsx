@@ -1,6 +1,6 @@
+import React from "react";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
 const LikeBtn: React.FC = () => {
     return (

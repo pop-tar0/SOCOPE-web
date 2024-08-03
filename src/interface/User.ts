@@ -6,3 +6,7 @@ export interface UserInterface {
     lastName: string;
     profilePhotoUrl: string;
 }
+
+export interface UserResponse {
+    data: UserInterface;
+}

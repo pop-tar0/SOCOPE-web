@@ -1,8 +1,11 @@
 import React from 'react';
-import logo from './../../assets/img/logo.png';
-import logoName from './../../assets/img/logo-name.png';
 
-const Title: React.FC = () => {
+export interface TitleProps {
+    logoIconUrl: string;
+    logoTitleUrl: string;
+}
+
+const Title: React.FC<TitleProps> = ({ logoIconUrl, logoTitleUrl }) => {
     const socopeUrl: string = 'http://localhost:3000';
 
     return (
@@ -12,12 +15,12 @@ const Title: React.FC = () => {
                 className='inline-flex items-center h-full w-auto ml-[8%] select-none'
             >
                 <img
-                    src={ logo }
+                    src={ logoIconUrl }
                     className='h-12'
                     alt=''
                 />
                 <img
-                    src={ logoName }
+                    src={ logoTitleUrl }
                     className='h-10'
                     alt=''
                 />
